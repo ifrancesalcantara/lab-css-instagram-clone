@@ -1,10 +1,193 @@
-/*
-Colors to use:
-dark blue: #06365f
-light blue: #1c5380
-*/
+/* ---- reset ---- */
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 
 body {
-  font: 200 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: 0;
+  padding: 0;
+}
+
+
+/* ---- typography ---- */
+
+body {
+  color: #111;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 147%;
+}
+
+h1 {}
+
+h2 {}
+
+h3 {}
+
+p {
+  margin: 0;
+}
+
+
+
+/* ---- layout ---- */
+
+#site-header {
+  padding: 10% 0;
+  color: white;
+  background-image: url("../images/bgtile.png");
+  background-size: 300px;
+  position: relative;
+}
+
+#site-footer {
+  color: gray;
+  padding: 60px 0;
+  background: white;
+
+}
+
+#site-main {
+}
+
+.section {
+  margin-bottom: 20px;
+  padding-top: 20px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 728px;
+    margin: 0 auto;
+  }
+}
+
+
+
+
+/* ---- components ---- */
+
+.phone-img {
+  padding: 100px;
+}
+
+.absolute-div {
+
+}
+
+.title-and-text-div {
+  padding:100px;
+}
+
+.button {
+  background-image: linear-gradient(rgb(37, 138, 161), rgb(37, 70, 161));
+  color: #fff;
+  box-shadow: 0px 0px 15px -2px rgba(43,43,43,0.62);
+  -moz-box-shadow: 0px 0px 15px -2px rgba(43,43,43,0.62);
+  box-shadow: 0px 0px 15px -2px rgba(43,43,43,0.62);
+  height: 3em;
+  display: flex;
+  align-items: center;
+  font-size: .8em;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+}
+/* 
+.button-alt {
+  color: blue;
+  background-color: #fff;
+} */
+
+.button img {
+  padding-right: 6px;
+}
+
+/* ---- section ---- */
+
+section.testimonials {
+  /* // ... */
+}
+
+section.testimonials .button {
+  margin-bottom: 10px;
+}
+
+.div1{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: absolute;
+  top: 10%;
+  left: 15%;
+}
+
+.title-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin: 10px 0;
+}
+
+.title-div img {
+  display: block;
+}
+
+.capture-div {
+  background-image: url("../images/frame.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px;
+  width: 600px
+}
+
+.capture-div > * {
+  margin: 0px 20px 0 20px;
+  padding-top: 20px; 
+}
+
+.capture-div h2 {
+  padding: 33px 20px 10px;
+  color: blue;
+  font-size: 30px;
+  width: 60%;
+  line-height: 1.2;
+}
+
+.capture-div p {
+  padding: 10px 20px;
+}
+
+.ios-android-imgs img {
+  padding: 40px 10px;
+}
+
+.ios-android-imgs :first-child {
+  padding-left: 40px;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 80%;
+  left: 25%;
+}
+footer p {
+  display: inline;
+  padding: 20px;
+}
+
+footer ul li {
+  float: left;
+  list-style: none;
+  color: blue;
+  padding: 20px;
 }
